@@ -18,7 +18,7 @@ composer require niladam/romanian-date
 
 ## Usage
 
-The API is the same as with [Nova's default `Date` Field](https://nova.laravel.com/docs/1.0/resources/fields.html#Date-field)
+It uses the same API as [Nova's default `Date` Field](https://nova.laravel.com/docs/1.0/resources/fields.html#date-field)
 
 Use `RomanianDate` class instead of `Date` directly or use it like an alias in the below example in order to not refactor too much.
 
@@ -32,27 +32,7 @@ use Madalin\RomanianDate\RomanianDate as Date;
 
 class User extends Resource
 {
-    /**
-     * The model the resource corresponds to.
-     *
-     * @var string
-     */
-    public static $model = 'App\User';
-
-    /**
-     * The single value that should be used to represent the resource when being displayed.
-     *
-     * @var string
-     */
-    public static $title = 'name';
-
-    /**
-     * The columns that should be searched.
-     *
-     * @var array
-     */
-    public static $search = ['name',
-                             'email'];
+    // [..]
 
     /**
      * Get the fields displayed by the resource.
@@ -81,7 +61,7 @@ class User extends Resource
                     ->updateRules('nullable', 'string', 'min:6'),
 
             Date::make(__('Updated at'), 'updated_at')
-                    ->format('DD.MM.YYYY')
+                    ->format('DD MMM YYYY')
                     ->updateRules('required', 'date')
                     ->hideFromIndex(),
         ];

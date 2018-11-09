@@ -14,7 +14,7 @@ export default {
         placeholder: {
             type: String,
             default: () => {
-                return moment().format('DD MM YYYY')
+                return moment().format('YYYY-MM-DD kk:mm:ss')
             },
         },
         disabled: {

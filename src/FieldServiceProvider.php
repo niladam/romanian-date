@@ -1,6 +1,6 @@
 <?php
 
-namespace Madalin\RomanianDateTime;
+namespace Madalin\RomanianDate;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
