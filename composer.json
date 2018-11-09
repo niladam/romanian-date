@@ -1,0 +1,41 @@
+{
+    "name": "niladam/romanian-date",
+    "description": "Romanian datepicker for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "romanian",
+        "datepicker",
+        "date",
+        "picker"
+    ],
+    "authors": [
+        {
+           "name": "Madalin Tache",
+           "email": "niladam@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": "^5.6",
+        "laravel/nova": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Madalin\\RomanianDate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Madalin\\RomanianDate\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
