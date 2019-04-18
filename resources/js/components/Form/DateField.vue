@@ -17,7 +17,8 @@
 </template>
 
 <script>
-import DateTimePicker from '../DateTimePicker'
+import DateTimePicker                                                     from '../DateTimePicker'
+// import DateTimeFormatConverter                                            from '../../DateTimeFormatConverter'
 import { Errors, FormField, HandlesValidationErrors, InteractsWithDates } from 'laravel-nova'
 
 export default {
@@ -26,7 +27,7 @@ export default {
 
     computed: {
         placeholder() {
-            return moment().format('DD MM YYYY')
+            return moment().format('DD MMM YYYY')
         },
     },
 }

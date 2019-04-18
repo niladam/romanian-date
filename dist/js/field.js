@@ -92,7 +92,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         placeholder: {
             type: String,
             default: function _default() {
-                return moment().format('DD MM YYYY');
+                return moment().format('YYYY-MM-DD kk:mm:ss');
             }
         },
         disabled: {
@@ -207,6 +207,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 
+// import DateTimeFormatConverter                                            from '../../DateTimeFormatConverter'
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -215,7 +216,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: {
         placeholder: function placeholder() {
-            return moment().format('DD MM YYYY');
+            return moment().format('DD MMM YYYY');
         }
     }
 });
@@ -272,7 +273,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.\\!cursor-not-allowed[data-v-412102b4] {\n    cursor: not-allowed !important;\n}\n", ""]);
+exports.push([module.i, "\n.\\!cursor-not-allowed[data-v-412102b4]{\n    cursor:not-allowed !important;\n}\n", ""]);
 
 // exports
 
@@ -13952,10 +13953,18 @@ Nova.booting(function (Vue, router) {
 
 /***/ }),
 
+/***/ "./resources/sass/field.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/js/field.js");
+__webpack_require__("./resources/js/field.js");
+module.exports = __webpack_require__("./resources/sass/field.scss");
 
 
 /***/ })
